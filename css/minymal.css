@@ -1,0 +1,332 @@
+html {
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #fff;
+    color: #2a2a2a;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+@media screen and (min-width:768px) {
+  body { font-size: 18px; }
+}
+@media screen and (min-width:992px) {
+  body { font-size: 20px; }
+}
+
+header {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  left: 0;
+  margin: 0 auto;
+  max-width: 1140px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin-bottom: 40px !important;
+}
+
+nav {
+  align-items: center;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+  color: rgb(42, 42, 42);
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: normal;
+  justify-content: space-between;
+  line-height: 23px;
+  margin: 0 auto;
+  padding: 10px 10px 10px 20px;
+  perspective: 1000px;
+  position: relative;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  z-index: 10;
+}
+@media screen and (min-width:768px) {
+  nav { padding: 30px 10px 30px 20px; }
+}
+
+nav::after {
+  background: hsla(0,0%,93%,.98);
+  box-shadow: 0 1px 3px hsla(0,0%,50%,.1);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: -4%;
+  position: absolute;
+  width: 108%;
+}
+
+dark {
+  color: #777777;
+}
+
+.logo {
+  left: -2px;
+  position: relative;
+  top: -2px;
+  margin-top: -1px !important;
+  margin-bottom: -1px !important;
+  font-family: cursive;
+}
+
+main {
+  margin: 60px auto;
+  max-width: 680px;
+  padding: 10px;
+}
+@media screen and (min-width:768px) {
+  main { margin: 120px auto; }
+}
+
+
+* a {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: rgba(0, 146, 255, 0.247059) 0px -1px 0px 0px inset;
+  box-sizing: border-box;
+  color: rgb(0, 144, 255);
+  display: inline;
+  text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+* a:hover {
+  box-shadow: rgba(3, 144, 255, 1.0) 0px -1px 0px 0px inset;
+}
+
+
+.nav-link {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: rgb(0, 144, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  padding: 4px 10px;
+  text-decoration: none;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-delay: 0s, 0s, 0s;
+  transition-duration: 0.2s, 0.2s, 0.2s;
+  transition-property: background-color, border-color, filter;
+  transition-timing-function: ease, ease, ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 144, 255, 0.05);
+  border-color: rgba(0, 144, 255, 0.3);
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-delay: 0s, 0s, 0s;
+  transition-duration: 0.2s, 0.2s, 0.2s;
+  transition-property: background-color, border-color, filter;
+  transition-timing-function: ease, ease, ease;
+}
+
+.main-nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.toggle-dark-mode-btn {
+  margin-left: 20px !important;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.modal {
+  z-index: 1 !important;
+  width: 400px;
+  position: relative;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: 1px solid #999;
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+.main-title {
+  margin-bottom: 5px;
+}
+
+.small-h2 {
+  color: #777777;
+}
+
+section.skills {
+  margin-top: 100px !important;
+}
+
+skillCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+skillCard {
+  border: 1px solid #777777;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+  flex: 1;
+  flex-basis: 40%;
+}
+
+skillCardTitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+skillCardInfo {
+  color: rgb(0, 144, 255);
+  margin-top: 10px;
+}
+
+
+section.recent-projects {
+  margin-top: 100px !important;
+}
+
+RecentProjects {
+  display: flex;
+}
+
+Project {
+  padding: 2px;
+}
+
+Project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+ProjectTitle {
+  font-weight: 600;
+  display: block;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+section.collaborate {
+  margin-top: 100px !important;
+}
+
+section.socialize {
+  margin-top: 100px !important;
+}
+
+ProjectLinks {
+  display:block;
+  margin-top: 10px;
+}
+
+SocialLinks a, ProjectLinks a {
+  margin-right: 20px;
+}
+
+#contact-me-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-me-form input, #contact-me-form textarea {
+  border-radius: 3px;
+  border: 1px solid #777777;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#contact-me-form input:active, #contact-me-form textarea:active {
+  border: 1px solid #2a2a2a;
+}
+
+#contact-me-form button[type="submit"] {
+  color: #fff;
+  background-color: rgb(0, 144, 255);
+  border: 1px solid rgb(0, 144, 255);
+  padding: 7px;
+  margin-top: 20px;
+  height: 35px;
+}
+
+#contact-me-form button[type="submit"]:active {
+  background-color: rgba(129, 200, 255, 0.9);
+  border: 1px solid rgba(129, 200, 255, 0.9);
+}
+
+#contact-form-sent {
+  display: none;
+}
+
+#contact-form-sending {
+  display: none;
+}
+
+#contact-form-failed {
+  display: none;
+}
+
+span.sending-emoji  {
+  font-size: 70px;
+  animation-name: sendingEmail;
+}
+
+@keyframes sendingEmail {
+  from {
+    margin-left: 200px !important;
+  }
+
+  to {
+    margin-left: 0px !important;
+  }
+}
+
+
+@media only screen and (max-height: 420px) {
+  .modal {
+    width: 90% !important;
+  }
+}
+
+footer {
+  font-size: 14px;
+  margin: 40px auto;
+  max-width: 700px;
+  opacity: 0.5;
+  text-align: center;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mychi</title>
+  <link rel="stylesheet" href="../css/minymal.css">
+</head>
+
+<body id="body">
+  <header id="header">
+    <nav>
+      <h2 class="logo" id="logo">Mychi</h2>
+      <div class="nav-links">
+        <a href="../index.html" class="main-nav-link">Home</a>
+        <!-- <a href="about.html" class="main-nav-link">About</a> -->
+        <a href="projects.html" class="main-nav-link">Projects</a>
+        <a href="contact.html" class="main-nav-link">Contact me</a>
+        <a id="toggle-dark-mode-btn" class="toggle-dark-mode-btn">🌙</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="app">
+      <section class="form">
+        <form id="contact-me-form">
+			<label for="name">Name</label>
+			<input type="text" placeholder="Your Name" id="name">
+			<small style="color: red; margin-top: -5px; margin-bottom: 10px;" id="nameMessage"></small>
+
+			<label for="email">Email</label>
+			<input type="email" placeholder="Your Email" id="email">
+			<small style="color: red; margin-top: -5px; margin-bottom: 10px;" id="emailMessage"></small>
+
+			<label for="message">Message</label>
+			<textarea id="message" rows="10" placeholder="Your message"></textarea>
+			<small style="color: red; margin-top: -5px; margin-bottom: 10px;" id="messageMessage"></small>
+
+			<button type="submit">Send Message</button>
+		</form>
+	  </section>
+	  
+	 <section id="contact-form-sent">
+		✔  Your message has been sent, I'll get back to you soon🙏
+      </section> 
+	 
+	  <section id="contact-form-sending">
+		<span class="sending-emoji" role="img">📧🏃‍♂️💨</span>
+		<h2>Sending...</h2>
+	  </section>
+	  
+	  <section id="contact-form-failed">
+		😵Your message failed to send
+      </section>
+      
+      <section class="socialize">
+        <h3>Let's socialize</h3>
+        <SocialLinks>
+          <a href="https://www.instagram.com/mychi_darko/">Instagram</a>
+          <a href="https://twitter.com/mychi_darko/">Twitter</a>
+          <a href="//linkedin/in/">LinkedIn</a>
+          <a href="https://github.com/mr-phlames/">Github</a>
+          <a href="mailto://mickdd22@gmail.com">Gmail</a>
+        </SocialLinks>
+      </section>
+    </div>
+  </main>
+  <footer>
+    © <span id="current-year"></span> Mychi Darko. All rights reserved.
+  </footer>
+  <script src="../js/app.js"></script>
+  <script src="../js/contact.js"></script>
+  <script src="../js/darkMode.js"></script>
+</body>
+</html>

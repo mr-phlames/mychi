@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mychi</title>
+  <link rel="stylesheet" href="css/minymal.css">
+</head>
+
+<body id="body">
+  <header id="header">
+    <nav>
+      <h2 class="logo" id="logo">Mychi</h2>
+      <div class="nav-links">
+        <a href="/" class="main-nav-link">Home</a>
+        <a href="pages/about.html" class="main-nav-link">About</a>
+        <a href="pages/projects.html" class="main-nav-link">Projects</a>
+        <a href="pages/contact.html" class="main-nav-link">Contact me</a>
+        <a id="toggle-dark-mode-btn" class="toggle-dark-mode-btn">🌙</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="app">
+      <section class="mychi-intro">
+        <img src="images/3.jpg" alt="Hero image" class="hero-img">
+        <h2 class="main-title">Hi, my name's Michael Darko🤓</h2>
+        <small class="small-h2">A full-stack web developer, designer, mobile and desktop app developer.</small>
+        <p>I design and code beautifully simple things <dark>#simplicityIsKey🌟</dark>, and I love what I do.</p>
+      </section>
+      <!-- this is bad coding😂😂, I'm creating my own tags...<dark> and <skillCard> don't exist in HTML -->
+      <section class="skills">
+        <h3>Let's take a look at some of my skills😊💪</h3>
+        <skillCards>
+          <skillCard>
+            <img src="images/icons/icon-frontend.svg" alt="icon">
+            <skillCardTitle>Web Dev</skillCardTitle>
+            <skillCardBody>
+              I tend to code things from scratch, and enjoy bringing ideas to life in the browser. It's all about crazy skeletons and beautiful paintings😅😅
+            </skillCardBody>
+            <skillCardInfo>Languages I speak:</skillCardInfo>
+            <skillCardText>
+              HTML, CSS, JS, PHP, TS, Ruby
+            </skillCardText>
+            <skillCardInfo>Packages I use:</skillCardInfo>
+            <skillCardText>
+              React, Next, Vue, Laravel, Leaf Framework, SASS, Bootstrap, Semantic UI, Materialise CSS...
+            </skillCardText>
+            <skillCardInfo>Stuff I create:</skillCardInfo>
+            <skillCardText>
+              Websites, Webapps, Browser extensions, PWAs...
+            </skillCardText>
+          </skillCard>
+
+          <skillCard>
+            <img src="images/icons/icon-frontend.svg" alt="icon">
+            <skillCardTitle>App Dev</skillCardTitle>
+            <skillCardBody>
+              This is an area I can have so much fun with. It's also about bringing ideas to life...but this time, it's not in a browser, but in a box🤔😅😅
+            </skillCardBody>
+            <skillCardInfo>Languages I speak:</skillCardInfo>
+            <skillCardText>
+              Dart, JS, Java
+            </skillCardText>
+            <skillCardInfo>Frameworks I use:</skillCardInfo>
+            <skillCardText>
+              React Native, Vue Native, Flutter, Electron, Ionic, Web2Mobile
+            </skillCardText>
+            <skillCardInfo>Platforms I create for:</skillCardInfo>
+            <skillCardText>
+              Windows, Mac, Linux Android, IOS 
+            </skillCardText>
+          </skillCard>
+
+          <skillCard>
+            <img src="images/icons/icon-designer.svg" alt="icon">
+            <skillCardTitle>Designing</skillCardTitle>
+            <skillCardBody>
+              I value simple content structure, clean design patterns, and thoughtful interactions. I'm especially good at pilaging designs...no hard feelings😂💔
+            </skillCardBody>
+            <skillCardInfo>Things I enjoy creating:</skillCardInfo>
+            <skillCardText>
+              illustrations, UIs, logos
+            </skillCardText>
+            <skillCardInfo>Tools I use:</skillCardInfo>
+            <skillCardText>
+              adobe illustrator, affinity designer, Canva, PicsArt
+            </skillCardText>
+          </skillCard>
+        </skillCards>
+      </section>
+
+      <section class="recent-projects">
+        <h3>These are a couple of my most recent works🤞🤞</h3>
+        <RecentProjects>
+          <Project>
+            <img src="images/6.jpg" alt="project">
+            <ProjectTitle id="project-title">Leaf PHP Framework🍀</ProjectTitle>
+            <ProjectDescription>
+              Leaf PHP Framework is a PHP framework that allows you to create clean, simple but powerful web apps and APIs quickly.
+            </ProjectDescription>
+          </Project>
+          <Project>
+            <img src="images/6.jpg" alt="project">
+            <ProjectTitle id="project-title">Leaf MVC🌲</ProjectTitle>
+            <ProjectDescription>
+              Leaf MVC is a PHP MVC framework created with Leaf PHP at it's core. It basically gives you all of Leaf's core functionality in an MVC setup.
+            </ProjectDescription>
+          </Project>
+        </RecentProjects>
+        <br>
+        <a href="pages/projects.html">View all my projects</a>
+      </section>
+
+      <section class="collaborate">
+        <h3>Interested in collaborating?🕴👨‍💼</h3>
+        <p>I’m always open to discussing product design work or partnership opportunities.</p>
+        <a href="pages/contact.html">Talk to me😉</a>
+      </section>
+
+      <section class="socialize">
+        <h3>Let's socialize</h3>
+        <SocialLinks>
+          <a href="https://www.instagram.com/mychi_darko/">Instagram</a>
+          <a href="https://twitter.com/mychi_darko/">Twitter</a>
+          <a href="//linkedin/in/">LinkedIn</a>
+          <a href="https://github.com/mr-phlames/">Github</a>
+          <a href="mailto://mickdd22@gmail.com">Gmail</a>
+        </SocialLinks>
+      </section>
+    </div>
+  </main>
+  <footer>
+    © <span id="current-year"></span> Mychi Darko. All rights reserved.
+  </footer>
+  <script src="js/app.js"></script>
+  <script src="js/darkMode.js"></script>
+</body>
+</html>
