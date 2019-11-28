@@ -38,31 +38,3 @@ function showSuccess() {
 	success.style = "display: block !important; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;";
 	sending.style = "display: none !important;";
 }
-
-// function applyMode(mode) {
-// 	if (mode === "dark") {
-// 		body.style = `background: #2a2a2a; color: #fff; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;`;
-// 			header.style = `background: rgba(42, 42, 42, 0.8); color: #fff; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;`;
-// 			name ? name.style = `background: rgba(42, 42, 42, 0.8); color: #fff; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;` : null;
-// 			name ? email.style = `background: rgba(42, 42, 42, 0.8); color: #fff; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;` : null;
-// 			name ? message.style = `background: rgba(42, 42, 42, 0.8); color: #fff; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;` : null;
-// 			logo.style = `color: #fff; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;`;
-// 			toggleDarkModeBtn.innerText = "🔆";
-// 	} else if (mode === "light") {
-// 		body.style = `background: #fff; color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;`;
-// 			header.style = `background: rgba(255,255,255,0.8); color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;`;
-// 			name ? name.style = `background: rgba(255,255,255,0.8); color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;` : null;
-// 			name ? email.style = `background: rgba(255,255,255,0.8); color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;` : null;
-// 			name ? message.style = `background: rgba(255,255,255,0.8); color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;` : null;
-// 			logo.style = `color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;`;
-// 			toggleDarkModeBtn.innerText = "🌙";
-// 	} else {
-// 		body.style = `background: #fff; color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;`;
-// 			header.style = `background: rgba(255,255,255,0.8); color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;`;
-// 			name ? name.style = `background: rgba(255,255,255,0.8); color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;` : null;
-// 			name ? email.style = `background: rgba(255,255,255,0.8); color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;` : null;
-// 			name ? message.style = `background: rgba(255,255,255,0.8); color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;` : null;
-// 			logo.style = `color: #2a2a2a; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out;`;
-// 			toggleDarkModeBtn.innerText = "🌙";
-// 	}
-// }
