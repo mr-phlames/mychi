@@ -157,6 +157,10 @@ main {
   box-shadow: rgba(3, 144, 255, 1.0) 0px -1px 0px 0px inset;
 }
 
+* a[active] {
+  box-shadow: rgba(3, 144, 255, 1.0) 0px -1px 0px 0px inset;
+}
+
 
 .nav-link {
   background-color: rgb(255, 255, 255);
